@@ -1,4 +1,4 @@
-# Flavorful Insights 🍹
+# Flavorful Insights
 
 **Mock café database to practice SQL and reporting**
 

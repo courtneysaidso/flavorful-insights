@@ -16,3 +16,10 @@ FROM orders o
 JOIN flavors f ON o.flavor_id = f.flavor_id
 GROUP BY f.name, month
 ORDER BY month, total_sold DESC;
+
+-- Check for duplicates
+SELECT name, category, COUNT(*)
+FROM flavors
+GROUP BY name, category
+HAVING COUNT(*) >1;
+
